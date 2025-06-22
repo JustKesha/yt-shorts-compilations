@@ -1,0 +1,12 @@
+:root {
+    /* Colors */
+    --bg-color: #0f0f0f;
+    --video-bg: #222;
+
+    /* Edges */
+    --video-edge-rounding: 20px;
+    
+    /* Size */
+    --video-width: 500px;
+    --video-height: 875px;
+}

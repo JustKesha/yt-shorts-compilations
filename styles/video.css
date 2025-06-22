@@ -1,0 +1,13 @@
+.video-container {
+    position: relative;
+    width: var(--video-width);
+    height: var(--video-height);
+    overflow: hidden;
+    background-color: var(--video-bg);
+    border-radius: var(--video-edge-rounding);
+}
+
+.shorts-embed {
+    width: 100%;
+    height: 100%;
+}
