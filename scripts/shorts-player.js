@@ -77,6 +77,18 @@ export class ShortsPlayer {
 		window.addEventListener("wheel", (e) => {
 			this.skip(e.deltaY > 0 ? 1 : -1);
 		});
+
+		// Touch
+		let touchStartY = 0;
+
+		window.addEventListener("touchstart", (e) => {
+			touchStartY = e.touches[0].clientY;
+		});
+		
+		window.addEventListener("touchend", (e) => {
+			const diff = touchStartY - e.changedTouches[0].clientY;
+			if (Math.abs(diff) > 50) this.skip(diff > 0 ? 1 : -1);
+		});
 	}
 
 	// General
