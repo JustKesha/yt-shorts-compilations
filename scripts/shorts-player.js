@@ -17,6 +17,7 @@ export class ShortsPlayer {
 		this.queue = queue;
 		this.video = { index: 0, id: "" };
 		this.youtube_player = null;
+		console.log(this.config)
 	}
 
 	// YouTube IFrame API 
@@ -48,7 +49,7 @@ export class ShortsPlayer {
 		switch (event.data) {
 			case YT.PlayerState.ENDED:
 				if (this.config.autoskip) {
-					this.skip(1);
+					this.next();
 				} else
 				if (this.config.loop) {
 					this.youtube_player.seekTo(0);
@@ -60,7 +61,7 @@ export class ShortsPlayer {
 	// General
 	init(autostart = this.config.autostart, at = this.config.startat) {
 		this._initYouTubeAPI().then(() => {
-			if (autostart) this.play(at);
+			if (autostart) this.start(at);
 		});
 	}
 	play(index = this.video.index) {
@@ -77,4 +78,9 @@ export class ShortsPlayer {
 			% this.queue.length
 		);
 	}
+
+	// Sugar
+	start(at = this.config.startat) { this.play(at); }
+	next() { this.skip(1); }
+	back() { this.skip(-1); }
 }
