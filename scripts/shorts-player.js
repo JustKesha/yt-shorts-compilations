@@ -74,7 +74,14 @@ export class ShortsPlayer {
 		});
 
 		// Mouse Wheel
+		let lastScrollTime = 0;
+		const scrollDelay = 350; // ms
+		
 		window.addEventListener("wheel", (e) => {
+			const now = Date.now();
+			if (now - lastScrollTime < scrollDelay) return;
+
+			lastScrollTime = now;
 			this.skip(e.deltaY > 0 ? 1 : -1);
 		});
 
