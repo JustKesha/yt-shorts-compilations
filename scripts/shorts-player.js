@@ -72,6 +72,11 @@ export class ShortsPlayer {
 					break;
 			}
 		});
+
+		// Mouse Wheel
+		window.addEventListener("wheel", (e) => {
+			this.skip(e.deltaY > 0 ? 1 : -1);
+		});
 	}
 
 	// General
