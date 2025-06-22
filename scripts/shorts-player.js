@@ -17,7 +17,6 @@ export class ShortsPlayer {
 		this.queue = queue;
 		this.video = { index: 0, id: "" };
 		this.youtube_player = null;
-		console.log(this.config)
 	}
 
 	// YouTube IFrame API 
@@ -58,9 +57,27 @@ export class ShortsPlayer {
 		}
 	}
 
+	// Controls
+	_initControls() {
+		// Keyboard
+		window.addEventListener("keydown", (e) => {
+			switch (e.key) {
+				case "ArrowRight":
+				case "ArrowDown":
+					this.next();
+					break;
+				case "ArrowLeft":
+				case "ArrowUp":
+					this.back();
+					break;
+			}
+		});
+	}
+
 	// General
 	init(autostart = this.config.autostart, at = this.config.startat) {
 		this._initYouTubeAPI().then(() => {
+			this._initControls();
 			if (autostart) this.start(at);
 		});
 	}
