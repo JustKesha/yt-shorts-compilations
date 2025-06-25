@@ -1,0 +1,41 @@
+function _onYouTubeIFrameAPIStateChange(player, event) {
+    switch (event.data) {
+        case YT.PlayerState.ENDED:
+            if (player.config.autoskip) {
+                player.next();
+            } else
+            if (player.config.loop) {
+                player.youtube_player.seekTo(0);
+            }
+            break;
+    }
+}
+
+function _onYouTubeIFrameAPIReady(player, resolve) {
+    player.youtube_player = new YT.Player(player.element, {
+        events: {
+            'onStateChange': (event) => _onYouTubeIFrameAPIStateChange(player, event),
+            'onReady': () => {
+                player.init();
+                resolve();
+            },
+        }
+    });
+}
+
+export function initYouTubeIFrameAPI(player) {
+    return new Promise((resolve) => {
+        // Load YouTube IFrame API (if not loaded)
+        if (!window.YT) {
+            window.onYouTubeIframeAPIReady = () => {
+                _onYouTubeIFrameAPIReady(player, resolve);
+            };
+
+            $('<script>', {
+                src: player.config.urlapi,
+            }).appendTo('body');
+        } else {
+            _onYouTubeIFrameAPIReady(player, resolve);
+        }
+    });
+}

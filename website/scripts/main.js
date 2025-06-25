@@ -1,4 +1,6 @@
 import { ShortsPlayer } from './shorts-player.js';
+import { initInputHandlers } from './input-handler.js';
+import { initYouTubeIFrameAPI } from './yt-iframe-api.js';
 
 const player = new ShortsPlayer({
 	queue: [
@@ -9,4 +11,5 @@ const player = new ShortsPlayer({
     autoskip: true,
 });
 
-player.init();
+initYouTubeIFrameAPI(player);
+initInputHandlers(player);
