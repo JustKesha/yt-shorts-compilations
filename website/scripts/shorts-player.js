@@ -11,18 +11,18 @@ export class ShortsPlayer {
 		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi };
 		this.queue = queue;
 		this.video = { index: 0, id: "" };
-		this.youtube_player = null;
+		this.YTPlayer = null;
 	}
 
 	init(autostart = this.config.autostart, at = this.config.startat) {
 		if (autostart) this.start(at);
 	}
 	play(index = this.video.index) {
-		if (!this.youtube_player) return;
+		if (!this.YTPlayer) return;
 
 		this.video.index = index;
-		if (this.youtube_player) {
-			this.youtube_player.loadVideoById(this.queue[index]);
+		if (this.YTPlayer) {
+			this.YTPlayer.loadVideoById(this.queue[index]);
 		}
 	}
 	skip(dir = 1) {

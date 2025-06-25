@@ -5,14 +5,14 @@ function _onYouTubeIFrameAPIStateChange(player, event) {
                 player.next();
             } else
             if (player.config.loop) {
-                player.youtube_player.seekTo(0);
+                player.YTPlayer.seekTo(0);
             }
             break;
     }
 }
 
 function _onYouTubeIFrameAPIReady(player, resolve) {
-    player.youtube_player = new YT.Player(player.element, {
+    player.YTPlayer = new YT.Player(player.element, {
         events: {
             'onStateChange': (event) => _onYouTubeIFrameAPIStateChange(player, event),
             'onReady': () => {
