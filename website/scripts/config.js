@@ -9,3 +9,20 @@ export const config = {
         CSS_VAR: "--video-ambient-color",
     }
 }
+
+export const InputConfig = {
+  wheel: {
+    threshold: 100,
+    resetDelay: 300,
+    preventDefault: true
+  },
+  touch: {
+    minSwipeDistance: 50,
+    preventDefault: true
+  },
+  keyboard: {
+    nextKeys: ['ArrowRight', 'ArrowDown'],
+    prevKeys: ['ArrowLeft', 'ArrowUp'],
+    preventDefault: true
+  }
+};
