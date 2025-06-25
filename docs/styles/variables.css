@@ -23,10 +23,10 @@
     --progress-gap: 4px;
     --progress-padding: 8px;
     --progress-radius: 2px;
-    --progress-inactive: #ffffff4d;
+    --progress-inactive: #ffffff38;
     --progress-hover: #ffffff80;
     --progress-active: #ffffff;
-    --progress-seen: #ffffff88;
+    --progress-seen: #ffffff8a;
     
     /* Action Buttons */
     --action-size: 48px;
