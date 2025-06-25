@@ -5,6 +5,7 @@ export class ShortsPlayer {
 			startat = 0, loop = true, autoskip = false,
 			urlapi = "https://www.youtube.com/iframe_api",
 			urlbase = "https://www.youtube.com/embed/",
+			noduplicates = true,
 		} = options;
 		
 		this.element = element || $(`#${id || "shorts-player"}`)[0];
@@ -30,6 +31,11 @@ export class ShortsPlayer {
 			(this.video.index + dir + this.queue.length)
 			% this.queue.length
 		);
+	}
+
+	queueUp(new_video_id) {
+		if(this.config.noduplicates && this.queue.includes(new_video_id)) return;
+		this.queue.push(new_video_id);
 	}
 
 	// Sugar
