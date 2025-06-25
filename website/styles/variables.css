@@ -23,7 +23,16 @@
     --progress-gap: 4px;
     --progress-padding: 8px;
     --progress-radius: 2px;
-    --progress-inactive: rgba(255, 255, 255, 0.3);
-    --progress-hover: rgba(255, 255, 255, 0.5);
-    --progress-active: rgba(255, 255, 255, 0.75);
+    --progress-inactive: #ffffff4d;
+    --progress-hover: #ffffff80;
+    --progress-active: #ffffffbf;
+    
+    /* Action Buttons */
+    --action-size: 48px;
+    --action-icon-size: 24px;
+    --action-gap: 16px;
+    --action-color: white;
+    --action-bg: #00000099;
+    --action-hover-bg: #ffffff1a;
+    --action-label-font: 14px;
 }

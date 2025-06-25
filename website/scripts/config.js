@@ -1,4 +1,5 @@
 export const config = {
+    GITHUB: "https://github.com/JustKesha/yt-shorts-compilations",
     YT_VIDEO_ID_LENGTH: 11,
     SHORTS_PLAYER_CONFIG: {
         autoskip: true,

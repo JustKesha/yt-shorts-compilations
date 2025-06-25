@@ -1,7 +1,7 @@
 .queue-progress {
     display: flex;
     gap: var(--progress-gap);
-    width: 100%;
+    width: var(--video-width);
     padding: var(--progress-padding);
     position: absolute;
     top: 0;

@@ -3,9 +3,11 @@ import { ShortsPlayer } from './shorts-player.js';
 import { initYouTubeIFrameAPI } from './yt-iframe-api.js';
 import { InputHandler } from './input-handler.js';
 import { parseUrlActions } from './url-parser.js';
+import { connectActionButtons } from './actions.js';
 
 const player = new ShortsPlayer(config.SHORTS_PLAYER_CONFIG);
 
 initYouTubeIFrameAPI(player);
 new InputHandler(player, InputConfig);
 parseUrlActions(player, window.location.href);
+connectActionButtons(player);
