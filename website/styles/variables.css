@@ -1,12 +1,20 @@
 :root {
+    /* ********* GENERAL ********* */
+
     /* Colors */
     --bg-color: #0f0f0f;
-    --video-bg: #222;
 
     /* Edges */
     --video-edge-rounding: 20px;
-    
-    /* Size */
+
+    /* ********* OTHER ********* */
+
+    /* Video Player */
+    --video-bg: #222;
     --video-width: 492px;
     --video-height: 875px;
+
+    /* Ambient Colors */
+    --video-ambient-color: #ffffff80; /* Should be updated in JS */
+    --video-ambient-size: 100px;
 }
