@@ -35,4 +35,8 @@
     --action-bg: #00000099;
     --action-hover-bg: #ffffff1a;
     --action-label-font: 14px;
+    
+    /* Next Preview */
+    --next-preview-height: 100px;
+    --next-preview-hover-reveal: 50px;
 }

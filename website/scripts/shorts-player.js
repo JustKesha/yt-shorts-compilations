@@ -1,5 +1,6 @@
 import { updateAmbientColors } from './ambient-color.js';
 import { initProgressBar } from './progress-bar.js';
+import { updateNextVideoThumb } from './next-preview.js';
 
 export class ShortsPlayer {
 	constructor(options) {
@@ -30,6 +31,7 @@ export class ShortsPlayer {
 		this.YTPlayer.loadVideoById(this.video.id);
 		updateAmbientColors(this.video.id);
         if (this.updateProgressBar) this.updateProgressBar();
+		updateNextVideoThumb(this);
 	}
 	skip(dir = 1) {
 		this.play(
