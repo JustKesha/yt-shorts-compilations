@@ -10,15 +10,17 @@ export class ShortsPlayer {
 			startat = 0, loop = true, autoskip = false,
 			urlapi = "https://www.youtube.com/iframe_api",
 			urlbase = "https://www.youtube.com/embed/",
-			noduplicates = true,
+			noduplicates = true, skipdelay = 0,
 		} = options;
 		
 		this.element = element || $(`#${id || "shorts-player"}`)[0];
-		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi, noduplicates };
+		this.config = { loop, autoskip, autostart, startat,
+			urlbase, urlapi, noduplicates, skipdelay };
 		this.queue = queue;
 		this.video = { index: 0, id: "", duration: -1, };
 		this.updateProgressBar = initProgressBar(this);
 		this.YTPlayer = null;
+		this.lastSkipTime = 0;
 	}
 
 	init(autostart = this.config.autostart, at = this.config.startat) {
@@ -36,6 +38,9 @@ export class ShortsPlayer {
 		$(document).prop('title', `(${this.queue.length}) ${config.WEBISTE_NAME}`);
 	}
 	skip(dir = 1) {
+		const now = Date.now();
+		if (now - this.lastSkipTime < this.config.skipdelay) return;
+		this.lastSkipTime = now;
 		this.play(
 			(this.video.index + dir + this.queue.length)
 			% this.queue.length
