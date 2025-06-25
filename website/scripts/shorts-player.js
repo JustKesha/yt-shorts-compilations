@@ -1,13 +1,8 @@
 export class ShortsPlayer {
 	constructor(options) {
 		const {
-			id,
-			element,
-			queue = [],
-			autostart = true,
-			startat = 0,
-			loop = true,
-			autoskip = false,
+			id, element, queue = [], autostart = true,
+			startat = 0, loop = true, autoskip = false,
 			urlapi = "https://www.youtube.com/iframe_api",
 			urlbase = "https://www.youtube.com/embed/",
 		} = options;
