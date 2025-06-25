@@ -1,0 +1,45 @@
+.video-actions {
+    position: absolute;
+    right: -72.5px;
+    bottom: 15px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: var(--action-gap);
+}
+  
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: var(--action-color);
+    transition: transform 0.2s ease;
+}
+  
+.action-button:hover .action-icon {
+    background-color: var(--action-hover-bg);
+}
+  
+.action-icon {
+    width: var(--action-size);
+    height: var(--action-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--action-bg);
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+  
+.action-icon svg {
+    width: var(--action-icon-size);
+    height: var(--action-icon-size);
+    fill: currentColor;
+}
+  
+.action-label {
+    font-size: var(--action-label-font);
+    font-weight: 500;
+    text-align: center;
+}
