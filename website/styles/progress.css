@@ -9,6 +9,10 @@
     z-index: 10;
 }
 
+.player-section {
+    padding-top: 5px;
+}
+
 .queue-progress-element {
     flex: 1;
     height: var(--progress-height);
@@ -27,6 +31,10 @@
 .queue-progress-element.active {
     background-color: var(--progress-active);
 }
+
+.queue-progress-element.seen {
+    background-color: var(--progress-seen);
+} 
 
 .queue-progress-element.active::after {
     content: '';
