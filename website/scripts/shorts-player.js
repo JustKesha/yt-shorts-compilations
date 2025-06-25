@@ -9,7 +9,7 @@ export class ShortsPlayer {
 		} = options;
 		
 		this.element = element || $(`#${id || "shorts-player"}`)[0];
-		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi };
+		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi, noduplicates };
 		this.queue = queue;
 		this.video = { index: 0, id: "" };
 		this.YTPlayer = null;
@@ -33,9 +33,11 @@ export class ShortsPlayer {
 		);
 	}
 
-	queueUp(new_video_id) {
+	queueUp(new_video_id, forcestart = true) {
 		if(this.config.noduplicates && this.queue.includes(new_video_id)) return;
 		this.queue.push(new_video_id);
+		if(forcestart && this.queue.length == 1)
+			this.play(0);
 	}
 
 	// Sugar
