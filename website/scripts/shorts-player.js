@@ -13,7 +13,7 @@ export class ShortsPlayer {
 		this.element = element || $(`#${id || "shorts-player"}`)[0];
 		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi, noduplicates };
 		this.queue = queue;
-		this.video = { index: 0, id: "" };
+		this.video = { index: 0, id: "", duration: -1, };
 		this.YTPlayer = null;
 	}
 

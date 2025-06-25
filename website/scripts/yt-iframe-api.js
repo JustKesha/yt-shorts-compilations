@@ -1,5 +1,8 @@
 function _onYouTubeIFrameAPIStateChange(player, event) {
     switch (event.data) {
+        case YT.PlayerState.PLAYING:
+            player.video.duration = player.YTPlayer.getDuration();
+            break;
         case YT.PlayerState.ENDED:
             if (player.config.autoskip) {
                 player.next();
