@@ -5,6 +5,7 @@
     overflow: hidden;
     background-color: var(--video-bg);
     border-radius: var(--video-edge-rounding);
+    box-shadow: 0 5px var(--video-ambient-size) var(--video-ambient-color);
 }
 
 .shorts-embed {

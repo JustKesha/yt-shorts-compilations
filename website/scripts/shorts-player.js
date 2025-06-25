@@ -1,3 +1,5 @@
+import { updateAmbientColors } from './ambient-color.js';
+
 export class ShortsPlayer {
 	constructor(options) {
 		const {
@@ -22,9 +24,9 @@ export class ShortsPlayer {
 		if (!this.YTPlayer) return;
 
 		this.video.index = index;
-		if (this.YTPlayer) {
-			this.YTPlayer.loadVideoById(this.queue[index]);
-		}
+		this.video.id = this.queue[index];
+		this.YTPlayer.loadVideoById(this.video.id);
+		updateAmbientColors(this.video.id);
 	}
 	skip(dir = 1) {
 		this.play(
