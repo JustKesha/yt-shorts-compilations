@@ -10,7 +10,6 @@ export async function getYouTubeVideoAccentColor(
         const img = new Image();
         img.crossOrigin = "Anonymous";
         img.src = `https://img.youtube.com/vi/${ytVideoID}/maxresdefault.jpg`;
-        console.log(img.src);
         
         img.onload = () => {
             const canvas = document.createElement("canvas");

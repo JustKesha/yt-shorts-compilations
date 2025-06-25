@@ -1,0 +1,40 @@
+.queue-progress {
+    display: flex;
+    gap: var(--progress-gap);
+    width: 100%;
+    padding: var(--progress-padding);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.queue-progress-element {
+    flex: 1;
+    height: var(--progress-height);
+    background-color: var(--progress-inactive);
+    border-radius: var(--progress-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.queue-progress-element:hover {
+    background-color: var(--progress-hover);
+}
+
+.queue-progress-element.active {
+    background-color: var(--progress-active);
+}
+
+.queue-progress-element.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--progress-accent);
+    border-radius: var(--progress-radius);
+}

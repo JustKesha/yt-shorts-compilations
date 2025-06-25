@@ -1,4 +1,5 @@
 import { updateAmbientColors } from './ambient-color.js';
+import { initProgressBar } from './progress-bar.js';
 
 export class ShortsPlayer {
 	constructor(options) {
@@ -14,6 +15,7 @@ export class ShortsPlayer {
 		this.config = { loop, autoskip, autostart, startat, urlbase, urlapi, noduplicates };
 		this.queue = queue;
 		this.video = { index: 0, id: "", duration: -1, };
+		this.updateProgressBar = initProgressBar(this);
 		this.YTPlayer = null;
 	}
 
@@ -27,6 +29,7 @@ export class ShortsPlayer {
 		this.video.id = this.queue[index];
 		this.YTPlayer.loadVideoById(this.video.id);
 		updateAmbientColors(this.video.id);
+        if (this.updateProgressBar) this.updateProgressBar();
 	}
 	skip(dir = 1) {
 		this.play(
@@ -40,6 +43,7 @@ export class ShortsPlayer {
 		this.queue.push(new_video_id);
 		if(forcestart && this.queue.length == 1)
 			this.play(0);
+		if (this.updateProgressBar) this.updateProgressBar();
 	}
 
 	// Sugar

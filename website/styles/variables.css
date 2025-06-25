@@ -17,4 +17,13 @@
     /* Ambient Colors */
     --video-ambient-color: #ffffff80; /* Should be updated in JS */
     --video-ambient-size: 100px;
+
+    /* Progress Bar */
+    --progress-height: 3px;
+    --progress-gap: 4px;
+    --progress-padding: 8px;
+    --progress-radius: 2px;
+    --progress-inactive: rgba(255, 255, 255, 0.3);
+    --progress-hover: rgba(255, 255, 255, 0.5);
+    --progress-active: rgba(255, 255, 255, 0.75);
 }
