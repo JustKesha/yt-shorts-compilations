@@ -11,18 +11,18 @@ export const config = {
 }
 
 export const InputConfig = {
-  wheel: {
-    threshold: 100,
-    resetDelay: 300,
-    preventDefault: true
-  },
-  touch: {
-    minSwipeDistance: 50,
-    preventDefault: true
-  },
-  keyboard: {
-    nextKeys: ['ArrowRight', 'ArrowDown'],
-    prevKeys: ['ArrowLeft', 'ArrowUp'],
-    preventDefault: true
-  }
+    wheel: {
+        threshold: 100,
+        resetDelay: 300,
+        preventDefault: true
+    },
+    touch: {
+        minSwipeDistance: 50,
+        preventDefault: true
+    },
+    keyboard: {
+        nextKeys: ['ArrowRight', 'ArrowDown'],
+        prevKeys: ['ArrowLeft', 'ArrowUp'],
+        preventDefault: true
+    }
 };
