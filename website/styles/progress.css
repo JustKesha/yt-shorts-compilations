@@ -32,6 +32,10 @@
     background-color: var(--progress-active);
 }
 
+.queue-progress-element.seen {
+    background-color: var(--progress-seen);
+} 
+
 .queue-progress-element.active::after {
     content: '';
     position: absolute;

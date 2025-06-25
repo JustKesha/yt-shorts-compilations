@@ -25,7 +25,8 @@
     --progress-radius: 2px;
     --progress-inactive: #ffffff4d;
     --progress-hover: #ffffff80;
-    --progress-active: #ffffffbf;
+    --progress-active: #ffffff;
+    --progress-seen: #ffffff88;
     
     /* Action Buttons */
     --action-size: 48px;
