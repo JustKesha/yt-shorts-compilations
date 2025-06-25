@@ -48,6 +48,7 @@
             0 3px calc(var(--video-ambient-size) * 1.4) var(--video-ambient-color);
     }
     75% {
+        box-shadow: 
             -14px 9px calc(var(--video-ambient-size) * 1.25) var(--video-ambient-color);
         transform: translateY(-3px);
     }
