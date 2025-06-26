@@ -27,12 +27,10 @@
     0%, 100% {
         box-shadow: 
             0 16px var(--video-ambient-size) var(--video-ambient-color);
-        transform: translateY(0);
     }
     15% {
         box-shadow: 
             -5px 8px calc(var(--video-ambient-size) * 1.15) var(--video-ambient-color);
-        transform: translateY(-2px);
     }
     30% {
         box-shadow: 
@@ -41,7 +39,6 @@
     45% {
         box-shadow: 
             15px 8px calc(var(--video-ambient-size) * 1.2) var(--video-ambient-color);
-        transform: translateY(-1px);
     }
     60% {
         box-shadow: 
@@ -50,7 +47,6 @@
     75% {
         box-shadow: 
             -14px 9px calc(var(--video-ambient-size) * 1.25) var(--video-ambient-color);
-        transform: translateY(-3px);
     }
     90% {
         box-shadow: 
