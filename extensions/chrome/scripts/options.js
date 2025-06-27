@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     <h2>Collection ${index + 1}</h2>
     <label>
         Name:
-        <input type="text" class="playlist-name" value="${playlist.name}">
     </label>
+    <input type="text" class="playlist-name" value="${playlist.name}">
     <label>
         Icon:
     </label>
