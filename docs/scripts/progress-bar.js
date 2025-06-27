@@ -9,7 +9,7 @@ export function initProgressBar(player) {
                 .addClass('queue-progress-element')
                 .toggleClass('seen', i < player.video.index)
                 .toggleClass('active', i === player.video.index)
-                .on('click', () => player.play(i))
+                .on('pointerdown', () => player.play(i))
                 .appendTo($container);
         }
     }
