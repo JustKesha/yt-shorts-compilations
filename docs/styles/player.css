@@ -53,3 +53,47 @@
             0 17px calc(var(--video-ambient-size) * 1.35) var(--video-ambient-color);
     }
 }
+
+.player-lock-section {
+    display: block;
+    margin-top: 5px;
+    /* text-align: left;
+    padding-left: calc((100% - var(--video-width))/2 + 15px); */
+    padding-left: calc((100% - var(--video-width))/2 + var(--video-width)/2 - 2.5vh/2);
+    display: none;
+}
+
+.player-controls-lock {
+    display: inline-block;
+    position: absolute;
+    height: 2.5vh;
+    width: 2.5vh;
+    opacity: .35;
+    cursor: pointer;
+    transition-duration: var(--trans);
+}
+
+.player-controls-lock:hover {
+    opacity: 1;
+}
+
+.player-controls-lock svg {
+    height: 100%;
+    width: 100%;
+}
+
+#controls-lock-on-button {
+    opacity: 1;
+}
+
+.player-controls-lock-cover {
+    background-color: rgba(255, 0, 0, 0.494);
+    height: var(--video-height);
+    width: var(--video-width);
+    position: absolute;
+    z-index: 1000;
+    left: calc((100vw - var(--video-width))/2);
+    top: calc((100vh - var(--video-height))/2 + 5px);
+
+    display: none;
+}

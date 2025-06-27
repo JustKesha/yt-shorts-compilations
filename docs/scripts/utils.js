@@ -77,7 +77,6 @@ function hslToRgb(h, s, l) {
 
 export function getDominantColor( imageUrl, callback,
     makeVibrant = true, vibrantMult = 1.5, usedImageWidthPercent = 35 ) {
-    console.log(imageUrl)
     const img = new Image();
     img.crossOrigin = 'Anonymous';
     img.src = imageUrl;

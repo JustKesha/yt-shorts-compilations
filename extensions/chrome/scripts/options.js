@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
 
     document.getElementById(`controls-button`).addEventListener('click', () => {
-        console.log(config.CONTROLS_MESSAGE);
         alert(config.CONTROLS_MESSAGE);
     });
     

@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="./styles/actions.css">
   <link rel="stylesheet" href="./styles/next-preview.css">
   <link rel="stylesheet" href="./styles/mobile.css">
-  <link rel="stylesheet" href="./styles/swipe-zones.css">
   <link rel="icon" href="./media/images/favicon.svg"/>
   <link rel="icon" type="image/png" href="./media/images/favicon.png"/>
   <link rel="icon" href="./media/images/favicon.ico">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+  <div class="player-controls-lock-cover" id="controls-lock-cover-id"></div>
   <div class="container">
     <div class="queue-progress" id="queue-progress">
       <div class="queue-progress-element"></div>
     </div>
+
 
     <div class="player-section">
       <!-- Dont remove default src, ?enablejsapi=1" needed -->
@@ -66,10 +67,14 @@
       </div>
     </div>
 
-    <div class="swipe-zone left"></div>
-    <div class="swipe-zone right"></div>
-    <div class="swipe-zone bottom"></div>
-    <div class="swipe-zone bottom-second"></div>
+    <div class="player-lock-section">
+      <div class="player-controls-lock" id="controls-lock-on-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9z"/></svg>
+      </div>
+      <div class="player-controls-lock" id="controls-lock-off-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18 10H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3h2c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2m-7.939 5.499A2.002 2.002 0 0 1 14 16a1.99 1.99 0 0 1-1 1.723V20h-2v-2.277a1.992 1.992 0 0 1-.939-2.224"/></svg>
+      </div>
+    </div>
 
     <div class="next-preview-container">
       <div class="next-preview" id="next-preview"></div>
