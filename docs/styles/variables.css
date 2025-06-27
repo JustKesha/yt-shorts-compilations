@@ -16,7 +16,7 @@
 
     /* Ambient Colors */
     --video-ambient-color: #ffffff80; /* Should be updated in JS */
-    --video-ambient-size: 100px;
+    --video-ambient-size: 75px;
 
     /* Progress Bar */
     --progress-height: 3px;

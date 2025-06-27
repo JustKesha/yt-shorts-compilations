@@ -26,19 +26,19 @@
 @keyframes videoAmbientColorAnimation {
     0%, 100% {
         box-shadow: 
-            0 16px var(--video-ambient-size) var(--video-ambient-color);
+            0 0px var(--video-ambient-size) var(--video-ambient-color);
     }
     15% {
         box-shadow: 
-            -5px 8px calc(var(--video-ambient-size) * 1.15) var(--video-ambient-color);
+            -5px 4px calc(var(--video-ambient-size) * 1.15) var(--video-ambient-color);
     }
     30% {
         box-shadow: 
-            0 15px calc(var(--video-ambient-size) * 1.3) var(--video-ambient-color);
+            0 7px calc(var(--video-ambient-size) * 1.3) var(--video-ambient-color);
     }
     45% {
         box-shadow: 
-            15px 8px calc(var(--video-ambient-size) * 1.2) var(--video-ambient-color);
+            15px -8px calc(var(--video-ambient-size) * 1.2) var(--video-ambient-color);
     }
     60% {
         box-shadow: 
@@ -46,7 +46,7 @@
     }
     75% {
         box-shadow: 
-            -14px 9px calc(var(--video-ambient-size) * 1.25) var(--video-ambient-color);
+            -14px -9px calc(var(--video-ambient-size) * 1.25) var(--video-ambient-color);
     }
     90% {
         box-shadow: 
