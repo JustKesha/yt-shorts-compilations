@@ -24,9 +24,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 <button class="color-option" data-color="${color}" style="background-color: ${color};"></button>`;
         });
 
+        // Removed for shorter embed size
+        // <h2>Collection ${index + 1}</h2>
         playlistOptions.innerHTML += `
 <div class="option" data-playlist-id="${playlist.id}">
-    <h2>Collection ${index + 1}</h2>
     <label>
         Name:
     </label>
