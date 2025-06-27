@@ -71,13 +71,40 @@ export class InputHandler {
       e.preventDefault();
       e.stopPropagation();
     }
-    this.touchStartY = e.touches[0].clientY;
+    const touch = e.touches[0];
+    this.touchStartX = touch.clientX;
+    this.touchStartY = touch.clientY;
   }
-
+  
   handleTouchEnd(e) {
-    const diff = this.touchStartY - e.changedTouches[0].clientY;
-    if (Math.abs(diff) > this.config.touch.minSwipeDistance) {
-      this.player.skip(diff > 0 ? 1 : -1);
+    const touch = e.changedTouches[0];
+    const endX = touch.clientX;
+    const endY = touch.clientY;
+    
+    const diffX = this.touchStartX - endX;
+    const diffY = this.touchStartY - endY;
+    
+    const absDiffX = Math.abs(diffX);
+    const absDiffY = Math.abs(diffY);
+    
+    if (absDiffX > this.config.touch.minSwipeDistance || 
+        absDiffY > this.config.touch.minSwipeDistance) {
+      
+      if (absDiffX > absDiffY) {
+        // Horizontal swipe - left/right takes priority
+        if (diffX > 0) {
+          this.player.next(); // Right to left
+        } else {
+          this.player.back(); // Left to right
+        }
+      } else {
+        // Vertical swipe - up/down
+        if (diffY > 0) {
+          this.player.next(); // Bottom to top
+        } else {
+          this.player.back(); // Top to bottom
+        }
+      }
     }
   }
 
