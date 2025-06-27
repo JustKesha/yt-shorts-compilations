@@ -1,0 +1,21 @@
+:root {
+    /* Colors */
+    --black: #0d0d0d;
+    --dark: #181818;
+    --gray: #3d3d3d;
+    --graish: #bcbcbc;
+    --light: #cfcfcf;
+    --white: #f7f7f7;
+    --accent: #c7c0ff;
+    --secondary: #a79bff;
+
+    /* Elements */
+    --background: var(--black);
+    --header: var(--white);
+    --text: var(--light);
+    --button: var(--white);
+    --hover: var(--accent);
+    --edges: 3px;
+    --trans: .15s;
+    --shadow: var(--black);
+}

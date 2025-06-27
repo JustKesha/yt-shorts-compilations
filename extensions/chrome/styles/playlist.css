@@ -1,0 +1,91 @@
+.playlist {
+    background-color: var(--background);
+    margin-bottom: 10px;
+    border-radius: var(--edges);
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.playlist-content {
+    padding: 20px;
+    border-radius: var(--edges);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.playlist-header {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    margin-bottom: 8px;
+}
+
+.playlist-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.playlist h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.playlist p {
+    margin: 0 0 10px 0;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.playlist .actions {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 5px;
+}
+
+.playlist .actions button {
+    width: 100%;
+}
+
+.playlist button {
+    box-shadow: none;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    background: var(--dark);
+    border-radius: 50px;
+
+    opacity: 0;
+    transition-duration: var(--trans);
+}
+
+.playlist:hover button {
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.playlist button:hover {
+    background-color: var(--gray);
+}
+
+.playlist button svg {
+    color: var(--text);
+    height: 0;
+}
+
+.playlist:hover button svg {
+    height: 17px;
+}
+
+.playlist button:hover svg {
+    color: var(--header);
+}
+
+.playlist.dark-font,
+.playlist.dark-font p,
+.playlist.dark-font h2,
+.playlist.dark-font img {
+    color: var(--dark);
+}

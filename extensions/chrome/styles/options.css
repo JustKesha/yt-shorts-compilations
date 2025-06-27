@@ -1,0 +1,140 @@
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: calc(100% - 60px);
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.option {
+    display: inline-block;
+    width: 350px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    background-color: var(--dark);
+    border-radius: var(--edges);
+    padding: 15px;
+    box-shadow: 0 2px 25px var(--shadow);
+}
+
+.option h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.option label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.option input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.option input[type="color"] {
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    border-radius: var(--edges);
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+.option input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0; 
+}
+
+.option input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: var(--edges);
+}
+
+.icon-preview-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-option {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.icon-option:hover {
+    background-color: var(--gray);
+}
+
+.icon-option.selected {
+    background-color: var(--gray);
+    border-color: var(--light);
+}
+
+.icon-preview svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+.icon-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.quick-colors {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.color-option {
+    height: 24px;
+    border-radius: var(--edges);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform var(--trans);
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+#save-button {
+    padding: 10px 25px;
+}
+
+button.cheep {
+    background-color: var(--dark);
+    border-radius: 50px;
+    color: var(--text);
+    border: 1px solid var(--gray);
+    padding: 7px 15px;
+    margin-right: 3px;
+}
+
+button.cheep:hover {
+    background-color: var(--gray);
+}
