@@ -10,7 +10,7 @@ chrome.commands.onCommand.addListener(async (command) => {
   }
   
   // Extract video ID from URL (format: youtube.com/shorts/VIDEO_ID)
-  const videoId = tab.url.split('/shorts/')[1];
+  const videoId = tab.url.split('/shorts/')[1].slice(0, 11);
   
   if (!videoId) {
     return;
