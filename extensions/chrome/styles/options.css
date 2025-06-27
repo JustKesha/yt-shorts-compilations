@@ -66,18 +66,26 @@ body {
 }
 
 .icon-preview-container {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 5px;
     margin-bottom: 15px;
 }
 
 .icon-option {
+    display: inline-block;
+    width: 24px;
     position: relative;
     cursor: pointer;
     padding: 5px;
     border-radius: 4px;
     transition: all 0.2s;
     border: 2px solid transparent;
+}
+
+label.icon-option {
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .icon-option:hover {
