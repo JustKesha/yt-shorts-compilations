@@ -44,3 +44,21 @@
     text-align: center;
     font-size: small;
 }
+
+@media (max-width: 768px) {
+    body, .container {
+        padding-top: 2.5vh;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .queue-progress {
+        margin-left: calc((100vw - var(--video-width))/2);
+    }
+    .next-preview-container {
+        display: none;
+    }
+    .video-actions {
+        display: none;
+    }
+}
