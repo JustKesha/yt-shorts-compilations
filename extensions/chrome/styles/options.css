@@ -100,6 +100,7 @@ label.icon-option {
 .icon-preview svg {
     width: 24px;
     height: 24px;
+    stroke-width: 2px;
     display: block;
     pointer-events: none;
 }
