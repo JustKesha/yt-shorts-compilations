@@ -1,9 +1,10 @@
 @media (max-width: 768px) {
     body, .container {
-        padding-top: 2.5vh;
+        padding-top: 2vh;
         display: block;
         text-align: center;
         justify-content: center;
+        padding-bottom: 0;
     }
     .queue-progress {
         margin-left: calc((100vw - var(--video-width))/2);
