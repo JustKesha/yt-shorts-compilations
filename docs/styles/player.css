@@ -87,13 +87,14 @@
 }
 
 .player-controls-lock-cover {
+    /* Easier Debug */
     /* background-color: rgba(255, 0, 0, 0.494); */
     height: var(--video-height);
     width: var(--video-width);
     position: absolute;
-    z-index: 1000;
     left: calc((100vw - var(--video-width))/2);
     top: calc((100vh - var(--video-height))/2 + 5px);
 
     display: none;
+    z-index: -100;
 }

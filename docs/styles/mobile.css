@@ -22,4 +22,8 @@
     .player-lock-section {
         display: block;
     }
+    .player-controls-lock-cover {
+        z-index: 1000;
+        display: none;
+    }
 }
