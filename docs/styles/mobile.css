@@ -6,6 +6,21 @@
         justify-content: center;
         padding-bottom: 0;
     }
+    .home h1 {
+        margin-bottom: 5px;
+    }
+    .home p {
+        margin-bottom: 15px;
+    }
+    .home-input {
+        display: block;
+    }
+    .home-input input {
+        margin-bottom: 8px;
+    }
+    .hidden {
+        display: none;
+    }
     .queue-progress {
         margin-left: calc((100vw - var(--video-width))/2);
     }

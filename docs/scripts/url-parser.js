@@ -19,5 +19,5 @@ export function parseUrlActions(player, url) {
                 });
                 break;
         }
-    })
+    });
 }

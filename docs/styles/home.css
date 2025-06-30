@@ -1,0 +1,23 @@
+.container.home {
+    padding-bottom: 50vh;
+}
+
+.home-header {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.home h1 {
+    margin-bottom: 8px;
+}
+
+.home p {
+    margin-bottom: 25px;
+}
+
+.home-input {
+    display: grid;
+    grid-template-columns: auto 100px;
+    gap: 10px;
+}

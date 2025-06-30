@@ -21,7 +21,15 @@ body {
     align-items: center;
     background-color: var(--bg-color);
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -31,4 +39,36 @@ body {
     align-items: center;
     padding: 20px 0;
     gap: 20px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    z-index: -100;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    cursor: pointer;
+    transition-duration: 1.25s;
+    border-radius: var(--edge-rounding);
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+input[type="text"] {
+    min-height: 34px; /* Should match the button */
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: var(--text-color);
+    border-radius: var(--edge-rounding);
 }

@@ -2,9 +2,12 @@
     /* ********* GENERAL ********* */
 
     /* Colors */
+    --text-color: #ffffff;
+    --darker-text-color: #909090;
     --bg-color: #0f0f0f;
 
     /* Edges */
+    --edge-rounding: 2.5px;
     --video-edge-rounding: 20px;
 
     /* ********* OTHER ********* */
