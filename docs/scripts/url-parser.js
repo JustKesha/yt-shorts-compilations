@@ -18,6 +18,11 @@ export function parseUrlActions(player, url) {
                     player.queueUp(ytVideoID);
                 });
                 break;
+            case 's':
+                const paramNumber = Number(paramValue);
+                if(paramNumber >= 0)
+                    player.config.startat = Number(paramValue);
+                break;
         }
     });
 }
