@@ -44,8 +44,4 @@
     --next-preview-height: 10vh;
     --next-preview-reveal: 7.25vh;
     --next-preview-hover-reveal: 5vh;
-
-    /* Swipe Zones */
-    --swipe-zone-width: 55px;
-    --swipe-zone-height: 40px;
 }
