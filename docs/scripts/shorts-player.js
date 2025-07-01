@@ -28,6 +28,7 @@ export class ShortsPlayer {
 	}
 	play(index = this.video.index) {
 		if (!this.YTPlayer) return;
+		if (this.queue.length == 0) return;
 
 		this.video.index = index;
 		this.video.id = this.queue[index];
