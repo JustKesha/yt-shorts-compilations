@@ -36,6 +36,9 @@ export class ShortsPlayer {
         if (this.updateProgressBar) this.updateProgressBar();
 		updateNextVideoThumb(this);
 		$(document).prop('title', `(${this.queue.length}) ${config.WEBISTE_NAME}`);
+		const url = new URL(window.location.href);
+		url.searchParams.set('s', this.video.index);
+		window.history.replaceState(null, '', url);
 	}
 	skip(dir = 1) {
 		const now = Date.now();
