@@ -42,6 +42,7 @@
     
     /* Next Preview */
     --next-preview-height: 10vh;
+    --next-preview-reveal: 7.25vh;
     --next-preview-hover-reveal: 5vh;
 
     /* Swipe Zones */

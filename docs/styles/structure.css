@@ -38,6 +38,7 @@ p {
     position: relative;
     align-items: center;
     padding: 20px 0;
+    height: 96vh;
     gap: 20px;
 }
 
