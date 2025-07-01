@@ -12,6 +12,17 @@ export function connectActionButtons(player) {
             window.open(config.GITHUB, '_blank');
         });
         
+        $('#action-share').click(async () => {
+            try {
+                const currentUrl = window.location.href;
+                await navigator.clipboard.writeText(currentUrl);
+                alert('URL copied to clipboard!');
+            } catch (err) {
+                console.error('Failed to copy URL: ', err);
+                alert('Failed to copy URL');
+            }
+        });
+        
         $('#action-yt').click(() => {
             if (player.video.id) {
                 window.open(`https://youtube.com/watch?v=${player.video.id}`, '_blank');

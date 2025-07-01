@@ -29,7 +29,7 @@
     align-items: center;
     background-color: var(--action-bg);
     border-radius: 50%;
-    margin-bottom: 4px;
+    margin-bottom: 2.5px;
 }
   
 .action-icon svg {
@@ -43,4 +43,8 @@
     font-weight: 500;
     text-align: center;
     font-size: small;
+}
+
+#action-share svg {
+    transform: scale(1.175);
 }
