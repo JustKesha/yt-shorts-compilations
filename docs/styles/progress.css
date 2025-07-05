@@ -16,26 +16,55 @@
 .queue-progress-element {
     flex: 1;
     height: var(--progress-height);
-    background-color: var(--progress-inactive);
     border-radius: var(--progress-radius);
     cursor: pointer;
-    transition: background-color 0.2s ease;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
-.queue-progress-element:hover {
+/* Visual element (actual progress bar) */
+.queue-progress-element::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--progress-inactive);
+    border-radius: var(--progress-radius);
+    transition: background-color 0.2s ease;
+}
+
+/* Larger invisible hover area */
+.queue-progress-element::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 20px);
+    z-index: -1;
+}
+
+/* Hover states */
+.queue-progress-element:hover::before {
     background-color: var(--progress-hover);
 }
 
-.queue-progress-element.active {
+.queue-progress-element.seen:hover::before {
+    background-color: var(--progress-hover) !important;
+}
+
+/* Active and seen states */
+.queue-progress-element.active::before {
     background-color: var(--progress-active);
 }
 
-.queue-progress-element.seen {
+.queue-progress-element.seen::before {
     background-color: var(--progress-seen);
-} 
+}
 
+/* Progress accent for active element */
 .queue-progress-element.active::after {
     content: '';
     position: absolute;
@@ -45,4 +74,5 @@
     width: 0%;
     background-color: var(--progress-accent);
     border-radius: var(--progress-radius);
+    z-index: 1;
 }
