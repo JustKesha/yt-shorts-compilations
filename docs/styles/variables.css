@@ -22,6 +22,7 @@
     --video-ambient-size: 75px;
 
     /* Progress Bar */
+    --progress-hitbox-increase: 30px;
     --progress-height: 3px;
     --progress-gap: 4px;
     --progress-padding: 0px;
