@@ -17,6 +17,23 @@ export function parseUrlActions(player, url) {
                 ytVideoIDs.forEach(ytVideoID => {
                     player.queueUp(ytVideoID);
                 });
+
+                // TODO Should instead be put in player class in case videos are added not via inital url
+                let progressOnhoverFlex = 1;
+
+                // (TODO Replace with a switch case)
+                // (TODO Place all hardcoded values in config)
+                if (ytVideoIDs.length > 10) // Threshold
+                
+                    if (ytVideoIDs.length < 25) {
+                        progressOnhoverFlex = 1.25;
+                    } else
+                    if (ytVideoIDs.length < 50) {
+                        progressOnhoverFlex = 1.5;
+                    } else
+                        progressOnhoverFlex = 1.75;
+
+                $(':root').css('--progress-onhover-flex', progressOnhoverFlex);
                 break;
             case 's':
             case 'start':

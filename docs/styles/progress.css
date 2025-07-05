@@ -24,6 +24,10 @@
     overflow: visible;
 }
 
+.queue-progress-element:hover {
+    flex: var(--progress-onhover-flex);
+}
+
 /* Visual element (actual progress bar) */
 .queue-progress-element::before {
     content: '';
