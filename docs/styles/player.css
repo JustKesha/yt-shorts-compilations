@@ -8,8 +8,8 @@
 
 .video-container {
     position: relative;
-    width: var(--video-width);
-    height: var(--video-height);
+    width: min(var(--video-width), 100vw);
+    height: min(var(--video-height), 100vh);
     overflow: hidden;
     margin: 0 auto;
     background-color: var(--video-bg);

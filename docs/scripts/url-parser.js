@@ -19,9 +19,22 @@ export function parseUrlActions(player, url) {
                 });
                 break;
             case 's':
+            case 'start':
+            case 'startat':
                 const paramNumber = Number(paramValue);
                 if(paramNumber >= 0)
                     player.config.startat = Number(paramValue);
+                break;
+            
+            // Experimental
+            case 'p':
+            case 'params':
+                // Wide
+                // TODO Better support for smaller screen sizes
+                if (paramValue.includes('w')) {
+                    $(':root').css('--video-width', '160vh');
+                    $(':root').css('--next-preview-height', '10vh');
+                }
                 break;
         }
     });
