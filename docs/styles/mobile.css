@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    :root {
+        --progress-padding: 4px;
+    }
     body, .container {
         padding-top: 2vh;
         display: block;

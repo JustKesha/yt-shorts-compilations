@@ -24,7 +24,7 @@
     /* Progress Bar */
     --progress-height: 3px;
     --progress-gap: 4px;
-    --progress-padding: 8px;
+    --progress-padding: 0px;
     --progress-radius: 2px;
     --progress-inactive: #ffffff38;
     --progress-hover: #ffffff80;
@@ -41,7 +41,7 @@
     --action-label-font: 14px;
     
     /* Next Preview */
-    --next-preview-height: 10vh;
+    --next-preview-height: 11vh;
     --next-preview-reveal: 7.25vh;
     --next-preview-hover-reveal: 5vh;
 }
