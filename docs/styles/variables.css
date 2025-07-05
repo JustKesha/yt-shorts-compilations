@@ -32,6 +32,7 @@
     --progress-seen: #ffffff8a;
     
     /* Action Buttons */
+    --action-bottom-padding: var(--video-edge-rounding);
     --action-size: 48px;
     --action-icon-size: 24px;
     --action-gap: 14px;
