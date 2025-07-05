@@ -26,6 +26,7 @@
     }
     .queue-progress {
         margin-left: calc((100vw - var(--video-width))/2);
+        width: var(--video-width);
     }
     .next-preview-container {
         display: none;

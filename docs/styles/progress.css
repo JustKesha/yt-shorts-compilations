@@ -1,12 +1,14 @@
 .queue-progress {
     display: flex;
     gap: var(--progress-gap);
-    width: var(--video-width);
+    width: calc(var(--video-width) - var(--video-edge-rounding) * 2);
     padding: var(--progress-padding);
+    margin-left: var(--video-edge-rounding);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    transform: translateY(5px);
 }
 
 .player-section {
