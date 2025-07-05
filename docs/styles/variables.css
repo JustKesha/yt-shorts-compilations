@@ -34,6 +34,7 @@
     --progress-seen-hover: #ffffffd2;
     
     /* Action Buttons */
+    --action-left: -62.5px;
     --action-bottom-padding: var(--video-edge-rounding);
     --action-size: 48px;
     --action-icon-size: 24px;

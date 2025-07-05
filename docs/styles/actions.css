@@ -1,6 +1,6 @@
 .video-actions {
     position: absolute;
-    right: -65px;
+    right: var(--action-left);
     bottom: var(--action-bottom-padding);
     flex-direction: column;
     display: flex;
