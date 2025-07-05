@@ -37,7 +37,7 @@ p {
     flex-direction: column;
     position: relative;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
     height: 96vh;
     gap: 20px;
 }

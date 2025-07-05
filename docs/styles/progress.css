@@ -52,7 +52,7 @@
 }
 
 .queue-progress-element.seen:hover::before {
-    background-color: var(--progress-hover) !important;
+    background-color: var(--progress-seen-hover) !important;
 }
 
 /* Active and seen states */

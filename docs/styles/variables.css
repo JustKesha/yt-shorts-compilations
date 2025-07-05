@@ -27,9 +27,10 @@
     --progress-padding: 0px;
     --progress-radius: 2px;
     --progress-inactive: #ffffff38;
-    --progress-hover: #ffffff80;
+    --progress-hover: #ffffffaa;
     --progress-active: #ffffff;
     --progress-seen: #ffffff8a;
+    --progress-seen-hover: #ffffffd2;
     
     /* Action Buttons */
     --action-bottom-padding: var(--video-edge-rounding);
