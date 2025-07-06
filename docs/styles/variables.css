@@ -22,6 +22,7 @@
     --video-ambient-size: 75px;
 
     /* Progress Bar */
+    --progress-active-flex: 1; /* Should be updated in JS */
     --progress-onhover-flex: 1; /* Should be updated in JS */
     --progress-hitbox-increase: 30px;
     --progress-height: 3px;

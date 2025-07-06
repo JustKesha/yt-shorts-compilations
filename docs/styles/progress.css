@@ -28,6 +28,10 @@
     flex: var(--progress-onhover-flex);
 }
 
+.queue-progress-element.active {
+    flex: var(--progress-active-flex);
+}
+
 /* Visual element (actual progress bar) */
 .queue-progress-element::before {
     content: '';
