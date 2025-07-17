@@ -139,7 +139,28 @@
       </div>
     </div>
   </div>
-  <script type="script" src="./scripts/metadata.js"></script>
+  <script>
+    const ytVideoIdLength = 11;
+  
+    $(document).ready(function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const request = urlParams.get('r');
+
+        if (request == null)
+            return;
+
+        const videosCount = Math.floor(request.length / ytVideoIdLength);
+
+        if (videosCount <= 0)
+            return;
+
+        const new_title = `Collection of ${videosCount} YouTube Shorts`;
+      
+        $('meta[name="title"]').attr('content', new_title);
+        $('meta[property="og:title"]').attr('content', new_title);
+        $('meta[property="twitter:title"]').attr('content', new_title);
+    });
+  </script>
   <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
