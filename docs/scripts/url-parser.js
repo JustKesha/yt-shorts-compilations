@@ -10,6 +10,7 @@ export function parseUrlActions(player, url) {
 
         switch (paramName) {
             case 'r':
+            case 'request':
             case 'i':
             case 'ids':
                 const ytVideoIDs = splitByLength(paramValue, config.YT_VIDEO_ID_LENGTH);
