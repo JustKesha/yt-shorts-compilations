@@ -9,11 +9,12 @@
 }
 
 .home h1 {
-    margin-bottom: 8px;
+    margin-top: 5em;
+    margin-bottom: .5em;
 }
 
 .home p {
-    margin-bottom: 25px;
+    margin-bottom: 3em;
 }
 
 .home-input {
