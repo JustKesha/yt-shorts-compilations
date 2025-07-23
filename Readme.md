@@ -1,7 +1,7 @@
 # YouTube Shorts Compilations
 
 Lightweight, no-registration online solution for creating, sharing, and watching collections of YouTube Shorts.
-This project consists of a [web application](https://justkesha.github.io/yt-shorts-compilations/) hosted via GitHub Pages and an optional [Chrome extension](../../#chrome-extension) for easier collection management.
+This project consists of a [Web application](https://justkesha.github.io/yt-shorts-compilations/) hosted via GitHub Pages and an optional [Chrome extension](../../#chrome-extension) for easier collection management.
 
 ### Overview
 
@@ -20,3 +20,45 @@ The optional Chrome extension simplifies collection creation with browser shortc
 1. Go to https://justkesha.github.io/yt-shorts-compilations
 2. Fill in any text that contains links to yt shorts
 3. Click generate
+
+## Chrome extension
+
+The optional chrome extension simplifies collection creation with browser shortcuts.
+
+### Features
+
+- Easy link generation
+- Shortcuts for saving videos
+- Collection colors & icons
+
+### Requirements
+
+- Browser with chrome extensions support - Chrome, Edge, Opera
+
+### Installation
+
+1. Download [extensions/chrome](extensions/chrome) directory
+2. Go to `chrome://extensions` url
+3. Enable "Developer mode"
+4. Click "Load unpacked"
+5. Select the extension directory
+
+> [!NOTE]
+> If the extension doesn't work, make sure it has all the necessary permissions toggled on.
+
+### Usage
+
+1. Open any YT Shorts video
+2. Click the [save hotkey](#controls)
+3. Repeat several times
+4. Click on the extension icon at the top right
+5. Hover onto the filled collection and click play
+
+### Controls
+
+| Windows | Mac | Description |
+|-|-|-|
+| `Alt+Shift+Z` | `Command+Shift+1` | Save current playing YT Shorts video to collection 1 |
+| `Alt+Shift+X` | `Command+Shift+2` | Save current playing YT Shorts video to collection 2 |
+| `Alt+Shift+C` | `Command+Shift+3` | Save current playing YT Shorts video to collection 3 |
+| `Alt+Shift+V` | `Command+Shift+4` | Save current playing YT Shorts video to collection 4 |
