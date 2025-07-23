@@ -1,25 +1,22 @@
 # YouTube Shorts Compilations
 
-## Input Handling System
+Lightweight, no-registration online solution for creating, sharing, and watching collections of YouTube Shorts.
+This project consists of a [web application](https://justkesha.github.io/yt-shorts-compilations/) hosted via GitHub Pages and an optional [Chrome extension](../../#chrome-extension) for easier collection management.
 
 ### Overview
-The input system handles three types of user interactions:
-- Mouse wheel scrolling
-- Touch swipes
-- Keyboard navigation
 
-### Architecture
-```mermaid
-graph TD
-    A[User Input] --> B[InputHandler]
-    B --> C[Player Controls]
-    D[InputConfig] --> B
-```
+YouTube currently lacks native support for creating playlists of YT Shorts.<br>
+This repository solves that problem by providing a simple way to compile, share, and view Shorts collections.<br>
+The optional Chrome extension simplifies collection creation with browser shortcuts.
 
-### Quick Start
-```javascript
-import { InputHandler, InputConfig } from './input-handler';
+### Features
 
-const player = new Player();
-const inputHandler = new InputHandler(player, InputConfig);
-```
+- No Registration
+- Shareable Links
+- Mobile support
+
+### Usage
+
+1. Go to https://justkesha.github.io/yt-shorts-compilations
+2. Fill in any text that contains links to yt shorts
+3. Click generate
