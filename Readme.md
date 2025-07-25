@@ -28,6 +28,10 @@ The optional chrome extension simplifies collection creation with browser shortc
 2. Fill in any text that contains links to yt shorts
 3. Click generate
 
+### Showcase
+
+<img alt="Mobile View" height="500px" src="preview/website-player-pc.png" /> <img alt="PC View" height="500px" src="preview/website-player-mobile.png" />
+
 ### Controls
 
 | Action | Description | PC | Mobile |
