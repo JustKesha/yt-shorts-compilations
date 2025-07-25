@@ -137,6 +137,7 @@ You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc
 #### Technologies
 
 - Jquery 3.6.0
+- YouTube IFrame API
 - Google Fonts
 
 ### API / URL Parameters
@@ -144,7 +145,7 @@ You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc
 | Param | Alias | Description | Example |
 |-|-|-|-|
 | `request` | `r`, `ids`, `i` | Unseparated YT video IDs,<br>duplicates are ignored | [...?r=E1RCT6eUyVgilcL2nHJvEc...](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg) |
-| `startat` | `start`, `s` | Starting video index (0-based),<br>updates automatically | [...?r=...&s=1](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg&s=3) |
+| `startat` | `start`, `s` | Starting video index (0-based),<br>updates automatically | [...?r=...&s=3](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg&s=3) |
 | `params` | `p` | Additional flags (see below) | [...?r=...&p=w](https://justkesha.github.io/yt-shorts-compilations?r=Q8NXO6YxBmUE6CcUj2mDbIYb18ldKjNoIor7tWjWI0ZAdQw4w9WgXcQ&p=w) |
 
 #### Available Flags:
