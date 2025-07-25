@@ -3,7 +3,6 @@ import { getDominantColor } from './utils.js';
 
 export async function getYouTubeVideoAccentColor(
     ytVideoID, onErr = config.AMBIENT_COLORS.DEFAULT,
-    opac = config.AMBIENT_COLORS.OPACITY,
     ) {
     if (!ytVideoID) return onErr;
     // Using video thumbnail*

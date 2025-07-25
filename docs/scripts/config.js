@@ -8,7 +8,6 @@ export const config = {
     },
     AMBIENT_COLORS: {
         DEFAULT: "#ffffff80",
-        OPACITY: .5,
         VIBRANT: 1.5,
         CSS_VAR: "--video-ambient-color",
     }
