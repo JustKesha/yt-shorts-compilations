@@ -114,11 +114,12 @@ But don't forget to read the related [documentation](#documentation) first!
 This section contains minmal project documentation, mainly for contributors.<br>
 Read it if you want to have a better understanding of how this application works.
 
+If you feel like the current documentation is missing important information, see [Issue #66](../../issues/66).
+
 ## Website
 
 All website files are located in the [docs/](docs/) folder for Github pages compatibility.<br>
-You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3Awebsite%20-label%3Aextension)" label.<br>
-If you feel like the current documentation is missing important information, see [Issue #66](../../issues/66).
+You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3Awebsite%20-label%3Aextension)" label.
 
 #### Technologies
 
