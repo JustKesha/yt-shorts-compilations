@@ -28,6 +28,18 @@ The optional chrome extension simplifies collection creation with browser shortc
 2. Fill in any text that contains links to yt shorts
 3. Click generate
 
+### Controls
+
+| Action | Description | PC | Mobile |
+|-|-|-|-|
+| Next | Go to the next video in queue | Arrow bottom / right,<br>Scroll down,<br>Click next video preview at the bottom | Swipe down / right |
+| Back | Go back one video in queue | Arrow up / left,<br>Scroll up | Swipe up / left |
+| Seek | Go to any video in queue | Progress bar at the top | Progress bar at the top |
+
+> [!NOTE]
+> To enable swiping anywhere on mobile devices, toggle the lock button on the bottom.<br>
+> Othewise, swiping will only be avalibble under the video player or on the sides.
+
 ## Chrome extension
 
 The optional chrome extension simplifies collection creation with browser shortcuts.
@@ -119,7 +131,7 @@ If you feel like the current documentation is missing important information, see
    
 | Param | Alias | Description | Example |
 |-|-|-|-|
-| `request` | `r`, `ids`, `i` | Unseparated YT video IDs (11 characters each) | [...?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivY...](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg) |
+| `request` | `r`, `ids`, `i` | Unseparated YT video IDs (11 characters each) | [...?r=E1RCT6eUyVgilcL2nHJvEc...](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg) |
 | `startat` | `start`, `s` | Starting video index (0-based), updates automatically | [...?r=...&s=1](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg&s=3) |
 | `params` | `p` | Additional flags (see below) | [...?r=...&p=w](https://justkesha.github.io/yt-shorts-compilations?r=Q8NXO6YxBmUE6CcUj2mDbIYb18ldKjNoIor7tWjWI0ZAdQw4w9WgXcQ&p=w) |
 
