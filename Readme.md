@@ -42,13 +42,22 @@ The optional chrome extension simplifies collection creation with browser shortc
 
 ## Chrome extension
 
-The optional chrome extension simplifies collection creation with browser shortcuts.
+This chrome extension simplifies the process of creating collection links using browser shortcuts.<br>
+It allows to add videos you're currently watching to your collections using hotkeys.<br>
+You can have from 1 to 4 collections at a time and customize things like thier names, colors and icons.<br>
 
 ### Features
 
 - Easy link generation
-- Shortcuts for saving videos
-- Collection colors & icons
+- Hotkeys for saving videos
+- Collection customization
+
+### Showcase
+
+<img alt="Mobile View" height="320px" src="preview/chrome-extension-popup.png" /> <img alt="PC View" height="320px" src="preview/chrome-extension-settings.png" />
+
+> [!NOTE]
+> Collection backgrounds, unlikes colors, icons & names, are not selectable and are instead generated each time you open the extension popup from 16 possible variations.
 
 ### Requirements
 
@@ -127,16 +136,12 @@ You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc
 - Google Fonts
 
 ### API / URL Parameters
-
-<div style="width: 100%; overflow-x: auto;">
    
 | Param | Alias | Description | Example |
 |-|-|-|-|
-| `request` | `r`, `ids`, `i` | Unseparated YT video IDs<br>(11 characters each) | [...?r=E1RCT6eUyVgilcL2nHJvEc...](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg) |
+| `request` | `r`, `ids`, `i` | Unseparated YT video IDs,<br>duplicates are ignored | [...?r=E1RCT6eUyVgilcL2nHJvEc...](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg) |
 | `startat` | `start`, `s` | Starting video index (0-based),<br>updates automatically | [...?r=...&s=1](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg&s=3) |
 | `params` | `p` | Additional flags (see below) | [...?r=...&p=w](https://justkesha.github.io/yt-shorts-compilations?r=Q8NXO6YxBmUE6CcUj2mDbIYb18ldKjNoIor7tWjWI0ZAdQw4w9WgXcQ&p=w) |
-
-</div>
 
 #### Available Flags:
 
