@@ -137,6 +137,7 @@ You can find open issues using the "[website](../../issues?q=sort%3Aupdated-desc
 #### Technologies
 
 - Jquery 3.6.0
+- YouTube IFrame API
 - Google Fonts
 
 ### API / URL Parameters
