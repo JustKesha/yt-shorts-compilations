@@ -7,7 +7,7 @@ This project consists of a [Web application](https://justkesha.github.io/yt-shor
 
 YouTube currently lacks native support for creating playlists of YT Shorts.<br>
 This repository solves that problem by providing a simple way to compile, share, and view Shorts collections.<br>
-The optional Chrome extension simplifies collection creation with browser shortcuts.
+The optional chrome extension simplifies collection creation with browser shortcuts.
 
 ### Features
 
@@ -62,3 +62,25 @@ The optional chrome extension simplifies collection creation with browser shortc
 | `Alt+Shift+X` | `Command+Shift+2` | Save current playing YT Shorts video to collection 2 |
 | `Alt+Shift+C` | `Command+Shift+3` | Save current playing YT Shorts video to collection 3 |
 | `Alt+Shift+V` | `Command+Shift+4` | Save current playing YT Shorts video to collection 4 |
+## Contributing
+
+Contributions welcome! Here's how to help:
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request with:
+   - Description of changes
+   - Related issue references
+
+You can also report bugs or create feature suggestions in the [Issues tab](../../issues),<br>
+Just make sure you describe the problem properly and dont create duplicates.
+
+#### Getting Started
+Check for "[good first issue](../../issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen+label%3A"good+first+issue")" label in the issues tab for ideas.<br>
+You can ask questions in existing issues or ask to assign you to the issue before starting.
+
+### Guidelines
+- Maintain consistent style
+- Test your changes thoroughly
+- Keep the changes focused on one topic
+- Update documentation if needed
