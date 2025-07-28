@@ -28,9 +28,11 @@ The optional chrome extension simplifies collection creation with browser shortc
 2. Fill in any text that contains links to yt shorts
 3. Click generate
 
-### Showcase
+### Preview
 
-<img alt="Mobile View" height="500px" src="preview/website-player-pc.png" /> <img alt="PC View" height="500px" src="preview/website-player-mobile.png" />
+Here are some preview screenshots from the website, PC & mobile view:
+
+<img alt="PC View" height="500px" src="preview/website-player-pc.png" /> <img alt="Mobile View" height="500px" src="preview/website-player-mobile.png" />
 
 ### Controls
 
@@ -56,7 +58,9 @@ You can have from 1 to 4 collections at a time and customize things like thier n
 - Hotkeys for saving videos
 - Collection customization
 
-### Showcase
+### Preview
+
+Here are some preview screenshots from the extension popup and the settings page:
 
 <img alt="Mobile View" height="320px" src="preview/chrome-extension-popup.png" /> <img alt="PC View" height="320px" src="preview/chrome-extension-settings.png" />
 
