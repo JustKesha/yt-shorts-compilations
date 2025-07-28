@@ -176,6 +176,15 @@ Although is a lot simpler. It works as follows:
 <img alt="Example image" src="https://img.youtube.com/vi/9mXdpjXj7GE/maxresdefault.jpg" width="300px" /><br>
 Result: gray `#959D9D`
 
+### Screen Lock
+
+There's a problem with using IFrame where it grabs and retains focus during interactions (clicking, scrolling, etc.),
+which is especially problematic on mobile devices (prevents swiping actions) where most part of the screen is covered by the Iframe element and unfocusing can be problematic.
+
+To adress this, a workaround has been implemented to disable Iframe controls on mobile - Screen Lock Mode ([lock icon at the bottom](#preview)).
+When enabled - it will lock away video controls (like volume, playback, etc.) but allow for swiping through queue.
+The state of this setting is saved between sessions in browser's local storage.
+
 ## Chrome Extension
 
 All files are located in the [extensions/chrome/](extensions/chrome/) folder.<br>
