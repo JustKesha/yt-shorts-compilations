@@ -28,6 +28,11 @@ The optional chrome extension simplifies collection creation with browser shortc
 2. Fill in any text that contains links to yt shorts
 3. Click generate
 
+#### Example Collections:
+
+1. [Collection of 5 YT Shorts](https://justkesha.github.io/yt-shorts-compilations?r=E1RCT6eUyVgilcL2nHJvEcJ5WIS3DKivYqbC6WHW0GJQNYXCuB5pTqg)
+2. [Collection of 5 YT Videos](https://justkesha.github.io/yt-shorts-compilations?r=Q8NXO6YxBmUE6CcUj2mDbIYb18ldKjNoIor7tWjWI0ZAdQw4w9WgXcQ&p=w) *\* Experimental wide screen mode*
+
 ### Preview
 
 Here are some preview screenshots from the website, PC & mobile view:
