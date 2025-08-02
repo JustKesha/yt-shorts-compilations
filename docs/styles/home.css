@@ -19,6 +19,39 @@
 
 .home-input {
     display: grid;
-    grid-template-columns: auto 100px;
+    grid-template-columns: auto 140px;
     gap: 10px;
+}
+
+#home-generate-button {
+    padding: 0.9em 2.4em;
+
+    color: var(--text-color);
+    background: linear-gradient(270deg, #f17c35, #e2336e, #35c9ff, #27d853, #f17c35);
+    background-size: 400% 400%;
+    border: none;
+    border-radius: var(--edge-rounding);
+    box-shadow: 0 4px 18px 0 rgba(80, 174, 255, 0.3), 0 2px 4px rgba(226, 51, 110, 0.09);
+    cursor: pointer;
+    transition: box-shadow 0.3s, animation-duration 0.3s;
+    outline: none;
+    letter-spacing: 1px;
+    animation: gradientMove 6s ease infinite;
+}
+
+#home-generate-button:hover {
+    box-shadow: 0 4px 32px 8px rgba(80, 174, 255, 0.5), 0 2px 8px rgba(226, 51, 110, 0.15);
+    animation-duration: 2s;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
