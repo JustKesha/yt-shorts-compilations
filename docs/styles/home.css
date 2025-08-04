@@ -19,7 +19,7 @@
 
 .home-input {
     display: grid;
-    grid-template-columns: auto 140px;
+    grid-template-columns: auto auto;
     gap: 10px;
 }
 
