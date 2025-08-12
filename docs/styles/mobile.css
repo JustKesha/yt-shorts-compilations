@@ -4,7 +4,7 @@
         --progress-gap: 2px;
     }
     body, .container {
-        padding-top: 1.5vh;
+        padding-top: 3vh;
         display: block;
         text-align: center;
         justify-content: center;
@@ -19,6 +19,7 @@
         padding: 0 20px;
     }
     .home button {
+        margin-top: 2vh;
         width: calc(100% - 40px);
         padding-left: 20px;
         padding-right: 20px;

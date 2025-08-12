@@ -24,12 +24,12 @@
 }
 
 #home-generate-button {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1.125em;
+    padding-bottom: 1.125em;
     font-weight: 900;
-    font-size: 1.1em;
+    text-transform: uppercase;
     letter-spacing: .5px;
-    transition-duration: 1s;
+    transition-duration: .75s;
     box-shadow: 0 10px var(--gen-btn-shadow-size-idle) var(--gen-btn-shadow-idle);
     background: linear-gradient(
         calc(90deg + var(--gen-btn-gradient-offset)),

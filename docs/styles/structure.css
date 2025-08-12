@@ -70,6 +70,8 @@ input[type="text"] {
     border: none;
     outline: none;
     padding: 8px;
+    text-align: center;
     background-color: var(--text-color);
     border-radius: var(--edge-rounding);
+    font-family: 'Roboto', sans-serif;
 }

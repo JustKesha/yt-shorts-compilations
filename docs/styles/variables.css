@@ -52,7 +52,7 @@
     --next-preview-hover-reveal: 5vh;
 
     /* Generate Button */
-    --gen-btn-width: 40%;
+    --gen-btn-width: 35%;
     --gen-btn-shadow-active: rgba(145, 255, 242, .5);
     --gen-btn-shadow-idle: rgba(255, 153, 122, 0.35);
     --gen-btn-shadow-size-active: 32px;
