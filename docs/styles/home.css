@@ -29,8 +29,8 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .5px;
-    transition-duration: .75s;
-    box-shadow: 0 10px var(--gen-btn-shadow-size-idle) var(--gen-btn-shadow-idle);
+    transition-duration: var(--transiton-duration);
+    box-shadow: 0 5px var(--gen-btn-shadow-size-default) var(--gen-btn-shadow-default);
     background: linear-gradient(
         calc(90deg + var(--gen-btn-gradient-offset)),
         var(--gen-btn-gradient-color-1),
@@ -44,6 +44,18 @@
 }
 
 #home-generate-button:hover {
-    box-shadow: 0 2.5px var(--gen-btn-shadow-size-active) var(--gen-btn-shadow-active);
+    box-shadow: 0 2.5px var(--gen-btn-shadow-size-hover) var(--gen-btn-shadow-hover);
     background-position-x: 100%;
+}
+
+input[type="text"] {
+    transition-duration: var(--transiton-duration);
+}
+
+input[type="text"]:invalid {
+    box-shadow: 0 0 var(--links-input-invalid-shadow) var(--links-input-invalid-color);
+}
+
+input[type="text"]:valid {
+    box-shadow: 0 0 var(--links-input-valid-shadow) var(--links-input-valid-color);
 }

@@ -5,6 +5,7 @@
     --text-color: #ffffff;
     --darker-text-color: #909090;
     --bg-color: #0f0f0f;
+    --transiton-duration: .75s;
 
     /* Edges */
     --edge-rounding: 2.5px;
@@ -52,15 +53,21 @@
     --next-preview-hover-reveal: 5vh;
 
     /* Generate Button */
-    --gen-btn-width: 35%;
-    --gen-btn-shadow-active: rgba(145, 255, 242, .5);
-    --gen-btn-shadow-idle: rgba(255, 153, 122, 0.35);
-    --gen-btn-shadow-size-active: 32px;
-    --gen-btn-shadow-size-idle: 64px;
+    --gen-btn-width: 40%;
+    --gen-btn-shadow-hover: rgba(145, 255, 242, .5);
+    --gen-btn-shadow-default: rgba(255, 60, 0, .4);
+    --gen-btn-shadow-size-hover: 32px;
+    --gen-btn-shadow-size-default: 64px;
     --gen-btn-gradient-offset: 16deg;
-    --gen-btn-gradient-color-1: #f17c35;
-    --gen-btn-gradient-color-2: red;
+    --gen-btn-gradient-color-1: rgb(255, 115, 0);
+    --gen-btn-gradient-color-2: rgb(255, 14, 14);
     --gen-btn-gradient-color-3: #e2336e;
     --gen-btn-gradient-color-4: #35c9ff;
     --gen-btn-gradient-color-5: #27d853;
+
+    /* Input Field */
+    --links-input-invalid-color: rgba(255, 255, 255, .5);
+    --links-input-valid-color: rgba(255, 255, 255, .3);
+    --links-input-invalid-shadow: var(--gen-btn-shadow-size-default);
+    --links-input-valid-shadow: var(--gen-btn-shadow-size-hover);
 }
