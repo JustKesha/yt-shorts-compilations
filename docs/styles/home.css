@@ -19,6 +19,31 @@
 
 .home-input {
     display: grid;
-    grid-template-columns: auto 100px;
     gap: 10px;
+    grid-template-columns: auto calc(var(--gen-btn-width) - (10px/2));
+}
+
+#home-generate-button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 900;
+    font-size: 1.1em;
+    letter-spacing: .5px;
+    transition-duration: 1s;
+    box-shadow: 0 10px var(--gen-btn-shadow-size-idle) var(--gen-btn-shadow-idle);
+    background: linear-gradient(
+        calc(90deg + var(--gen-btn-gradient-offset)),
+        var(--gen-btn-gradient-color-1),
+        var(--gen-btn-gradient-color-2),
+        var(--gen-btn-gradient-color-3),
+        var(--gen-btn-gradient-color-4),
+        var(--gen-btn-gradient-color-5)
+        );
+    background-size: 300%;
+    background-position: 0;
+}
+
+#home-generate-button:hover {
+    box-shadow: 0 2.5px var(--gen-btn-shadow-size-active) var(--gen-btn-shadow-active);
+    background-position-x: 100%;
 }

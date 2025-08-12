@@ -50,4 +50,17 @@
     --next-preview-height: 11vh;
     --next-preview-reveal: 7.25vh;
     --next-preview-hover-reveal: 5vh;
+
+    /* Generate Button */
+    --gen-btn-width: 40%;
+    --gen-btn-shadow-active: rgba(145, 255, 242, .5);
+    --gen-btn-shadow-idle: rgba(255, 153, 122, 0.35);
+    --gen-btn-shadow-size-active: 32px;
+    --gen-btn-shadow-size-idle: 64px;
+    --gen-btn-gradient-offset: 16deg;
+    --gen-btn-gradient-color-1: #f17c35;
+    --gen-btn-gradient-color-2: red;
+    --gen-btn-gradient-color-3: #e2336e;
+    --gen-btn-gradient-color-4: #35c9ff;
+    --gen-btn-gradient-color-5: #27d853;
 }
