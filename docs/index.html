@@ -42,7 +42,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+  <!-- TODO There are only 3 fils using double s vs tabs & I dont remember why -->
 </head>
 <body>
   <div class="player-controls-lock-cover" id="controls-lock-cover-id"></div>
@@ -52,7 +54,6 @@
     </div>
 
     <div class="player-section">
-      <!-- Dont remove default src, ?enablejsapi=1" needed -->
       <div class="video-container">
         <iframe 
           id="shorts-player"
@@ -121,14 +122,14 @@
         YT Shorts Compilations
       </h1>
       <p>
-        Quickly generate and share collections of YouTube Shorts from links!
+        Quickly generate, share & watch collections of YouTube Shorts!
       </p>
       <div class="home-input">
         <input 
           id="home-text-input"
           type="text"
           name="text"
-          placeholder="Your YouTube Shorts links go here" />
+          placeholder="YouTube Shorts links go here" />
         <button id="home-generate-button">
           Generate
         </button>
