@@ -1,14 +1,11 @@
 :root {
     /* ********* GENERAL ********* */
 
-    /* Colors */
     --text-color: #ffffff;
     --darker-text-color: #909090;
     --bg-color: #0f0f0f;
     --transiton-duration: .75s;
-
-    /* Edges */
-    --edge-rounding: 2.5px;
+    --edge-rounding: 5px;
     --video-edge-rounding: 20px;
 
     /* ********* OTHER ********* */
