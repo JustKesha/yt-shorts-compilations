@@ -70,7 +70,7 @@ Here are some preview screenshots from the extension popup and the settings page
 <img alt="Mobile View" height="320px" src="preview/chrome-extension-popup.png" /> <img alt="PC View" height="320px" src="preview/chrome-extension-settings.png" />
 
 > [!NOTE]
-> Collection backgrounds, unlikes colors, icons & names, are not selectable and are instead generated each time you open the extension popup from 16 possible variations.
+> Collection backgrounds (unlike the colors, icons & names) are not selectable and are instead generated each time you open the extension popup from 16 possible variations.
 
 ### Requirements
 
