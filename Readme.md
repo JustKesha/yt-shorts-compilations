@@ -90,7 +90,7 @@ Here are some preview screenshots from the extension popup and the settings page
 ### Usage
 
 1. Open any YT Shorts video
-2. Click the [save hotkey](#controls)
+2. Click the [save hotkey](#controls-1)
 3. Repeat several times
 4. Click on the extension icon at the top right
 5. Hover onto the filled collection and click play
